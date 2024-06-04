@@ -1,0 +1,47 @@
+body{
+	background-color: white;
+	color:black;
+}
+.wrap{
+	height:100vh;
+	width:97vw;
+}
+
+.header:hover{
+    background-color: aqua;
+}
+.container{
+	background-color: #88888820;
+	transition:0.7s;
+}
+.container:hover{
+	background-color: #00000070;
+}
+
+#navbar{
+	background-color: #88888898;
+	color: white;
+	height:3vh;
+	margin-top: -3vh;
+}
+.body{
+	height: 78vh
+}
+.footer{
+	height:4vh;
+	background-color: cyan;
+	color:black;
+}
+.box{
+	text-align: center;
+	font-size: 125%;
+	width: 20vh;
+	display:inline-block;
+	transition:0.7s;
+	color:white;
+	height: 3vh;
+}
+.box:hover{
+	background-color: white;
+	color: black;
+}

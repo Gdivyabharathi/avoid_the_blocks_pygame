@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+    	body{
+    		background-image: url("{{ url_for('static',filename='/img/servicesbg.jpg') }}");
+    		background-size:cover;
+    		background-repeat: no-repeat;
+    	}
+    tr{border:2px solid black;border-collapse:collapse;transition: 0.6s;}
+    th{
+      height:40vh;
+      width:22vw;
+    }
+      td{
+        width:78vw;
+    }
+    .span{
+    	border:1px solid black;
+    }
+    #del{
+    	background-image: url("{{ url_for('static',filename='/img/delivery.png') }}");
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    }
+    #spl{
+    	background-image: url("{{ url_for('static',filename='/img/food.png') }}");
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    }
+    #prt{
+    	background-image: url("{{ url_for('static',filename='/img/party.png') }}");
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    }
+    table:hover tr{
+    	background-color: #ffffff80;
+    }
+  </style>
+  <script type="text/javascript">
+  	function place(){
+  		var username = window.prompt("Enter your name","");
+  		var number = window.prompt("Enter your mobile number","");
+  		var location = window.prompt("Enter your location","");
+  		var order = window.prompt("enter the name of the items","");
+  		var status = window.alert("we have placed your order, we will contact you as soon as your order will be ready");
+  	}
+  </script>
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <th id="del"></th>
+          <td>
+            <center>
+              <h3>Food delivery at your door step </h3>
+              You can enjoy tasty meal at restaurant or just enjoy the time with
+              your loved one's.<br>
+              But apart from this if you can also enjoy our food at home.<br>
+              We provide food delivery service at your door step,with free
+              delivery service.<br>
+              <button name="order" onclick="place();">Place order</button><hr>
+              <span class="span">Terms and conditions apply for free delivery</span> </center>
+              <span id="order_p"></span>
+
+          </td>
+        </tr>
+        <tr>
+          <th id="spl"></th>
+          <td>
+            <center>
+              <h3>Special orders according to your mood</h3>
+              Our menus change day by day so you will experience something new
+              everyday.<br>
+              but if you want something special!, No problem at all.<br>
+              We also provide the facility for costum orders so you don't miss
+              out the opportunit to enjoy the meal according to your
+              specific mood<br>
+              <span class="span">You must be logged in in order to place special orders</span>  
+          </center>
+          </td>
+        </tr>
+        <tr>
+          <th id="prt"></th>
+          <td>
+            <center>
+              <h3>Is it a big event don't worry we are here</h3>
+              Besides the food orders and delivery services we can also make
+              arrangements for your special events.<br>
+              You want it indoor or outdoor just tell us we will arrange it
+              according to your need.<br>
+              our indoor hall is sufficient for 30-40 people and our staff can
+              efficiently serve 50 people at time.<br>
+              for outdoor arrangement we have a backyard ground, which is
+              efficient for 50 people comfortably.<br><hr>
+              <span class="span">for prices,availability and other details please contact us</span>
+          </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </body>
+</html>

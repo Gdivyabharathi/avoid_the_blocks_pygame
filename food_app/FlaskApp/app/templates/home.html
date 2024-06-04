@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!--i already indexed this site with google bots so don't try to copy it until you want a copy panelty on your site, if you want to use the site you can contact me through login page-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/index.css') }}">
+
+</head>
+<style>
+.header{
+	height:20vh;
+	background-image: url("{{ url_for('static',filename='/img/bg1.jpg') }}");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+}
+#heading{
+	height: 20vh;
+	width: 20vw;
+	background-image: url("{{ url_for('static',filename='/img/logo.png') }}");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -3vh;
+}
+
+</style>
+<body>
+<section class="wrap">
+	<section class="header">
+		<div class="container">
+			<center><div id="heading">
+	 		</div></center>
+ 		</div>
+ 		<div id="navbar">
+ 			<div class="box box1"><a href="/services" target="area">Services</a></div>
+ 			<div class="box box2"><a href="/menu" target="area">Menu</a></div>
+ 			<div class="box box3"><a href="/reviews" target="area">User Reviews</a></div>
+ 			<div class="box box1"><a href="/about" target="area">About Us</a></div>
+ 			<div class="box box1"><a href="/login" target="__blank">Login</a></div>
+ 		</div>
+	</section>
+	<section class="body">
+		<iframe name="area" height="100%" width="100%"></iframe>
+	</section>
+	<section class="footer">
+		<marquee>Copyright reserved</marquee>
+	</section>
+</section>
+</body>
+</html>

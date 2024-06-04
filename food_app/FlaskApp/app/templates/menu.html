@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+</head>
+<body>
+	<section class="container">
+<section class="body">
+	<table id="main_course">
+	</table>
+</section>
+<section class="wrap">
+	<center><strong><span id="cap">Side dishes/deserts</span></strong></center>
+	<div class="side side1">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>simple chapati</td>
+				<td>6/-</td>
+			</tr>
+			<tr>
+				<td>buttur chapati</td>
+				<td>9/-</td>
+			</tr>
+			<tr>
+				<td>simple nan</td>
+				<td>7/-</td>
+			</tr>
+			<tr>
+				<td>buttor nan</td>
+				<td>11/-</td>
+			</tr>
+			<tr>
+				<td>simple dosa</td>
+				<td>14/-</td>
+			</tr>
+		</table>
+	</div>
+	<div class="side side2">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>rice</td>
+				<td>15/-</td>
+			</tr>
+			<tr>
+				<td>jira rice</td>
+				<td>20/-</td>
+			</tr>
+			<tr>
+				<td>lemon rice</td>
+				<td>25/-</td>
+			</tr>
+			<tr>
+				<td>fried rice</td>
+				<td>25/-</td>
+			</tr>
+			<tr>
+				<td>kabab</td>
+				<td>35/-</td>
+			</tr>
+		</table>
+	</div>
+	<div class="side side3">
+	<table>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>tea</td>
+				<td>5/-</td>
+			</tr>
+			<tr>
+				<td>coffee</td>
+				<td>10/-</td>
+			</tr>
+			<tr>
+				<td>cold coffee</td>
+				<td>15/-</td>
+			</tr>
+			<tr>
+				<td>masala tea</td>
+				<td>15/-</td>
+			</tr>
+			<tr>
+				<td>green tea</td>
+				<td>20/-</td>
+			</tr>
+		</table></div>
+</section>
+<center><span id="span">Note that we are off on sunday so there will be no menu on sunday</span></center>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='/js/menu.js') }}"></script>
+<style type="text/css">
+	table,th,td{
+		text-align: center;
+		border:1px solid white;
+		border-collapse: collapse;
+	}
+	th{
+		width: 10vw;
+		font-size: 135%;
+		background-color: black;
+		color:white;
+	}
+	td{
+		font-size: 125%;
+	}
+	tr{
+		color:white;
+		transition: 0.5;
+	}
+	tr:hover{
+		border:2px solid black;
+		background-color: white;
+		color:black;
+		box-shadow: 2px 2px 2px #888888;
+	}
+	#span{
+		color:white;
+		transition: 0.8s;
+	}
+	.container:hover #span{
+		border:2px solid white;
+		border-radius:10%;
+	}
+	caption{
+		font-size: 150%;
+		color:white;
+	}
+	body{
+		background-image:url("{{ url_for('static',filename='/img/menubg.jpg') }}");
+		background-position: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.container{
+		height: 80vh;
+		width: 61vw;
+		margin-left: 27vw;
+		margin-top:25vh;
+		transition: 0.8s;
+	}
+	.container:hover{
+		border:1px solid white;
+		box-shadow: 2px 2px 2px #888888;
+	}
+	#main_course{
+		margin-left: 35vw;
+	}
+	.wrap{
+		height:50vh;
+		width:97vw;
+		margin-top:3vh;
+	}
+	.side{
+		border:1px solid black;
+		display: inline-block;
+		width: 20vw;
+	}
+	#cap{
+		font-size: 145%;
+		color:white;
+	}
+</style>
+</body>
+</html>
